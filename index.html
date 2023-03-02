@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas Pendientes</title>
+    
+    <link rel="stylesheet" href="styles.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="app">
+        <!-- Greeting -->
+        <section class="greeting">
+            <h2 class="title">
+                Hola qué tal, <input type="text" id="name" placeholder="Nombre aqui" />
+            </h2>
+
+        </section>
+
+        <!-- End Greeting -->
+
+        <!-- New Todo -->
+        <section class="create-todo">
+            <h3>INGRESA UNA TAREA</h3>
+
+            <form id="new-todo-form">
+                <h4>¿Qué tareas tienes pendientes?</h4>
+                <input 
+                type="text"
+                name="content"
+                id="content"
+                />
+
+                <h4>Escoge una categoría</h4>
+                <div class="options">
+
+                    <label>
+                        <input
+                         type="radio"
+                         name="category"
+                         class="bubble trabajo"
+                         id="category1"
+                         value="trabajo" />
+                         <div>Trabajo</div>
+                    </label>
+                      <label>
+                        <input
+                         type="radio"
+                         class="bubble personal"
+                         name="category"
+                         id="category2"
+                         value="personal" />
+                       
+                         <div>Personal</div>
+                    </label>
+                </div>
+
+                <input type="submit" value="nueva tarea" />
+            </form>
+        </section>
+        <!-- End Todo Section -->
+
+        <!-- Todo List -->
+        <section class="todo-list">
+            <h3>LISTA DE TAREAS</h3>
+            <div class="list" id="todo-list"> </div>
+        </section>
+
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
